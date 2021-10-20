@@ -1,5 +1,11 @@
-- name: Invoke workflow without inputs
-  uses: benc-uk/workflow-dispatch@v1
-  with:
-    workflow: My Workflow
-    token: ${{ secrets.ACCESS_TOKEN }}
+name: Manually triggered workflow
+on: workflow_dispatch
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      uses: benc-uk/workflow-dispatch@v1
+      with:
+        workflow: My Workflow
+        token: ${{ secrets.ACCESS_TOKEN }}
