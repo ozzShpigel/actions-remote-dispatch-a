@@ -8,5 +8,5 @@ jobs:
       - name: www 
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: My Workflow
+          workflow: test
           token: ${{ secrets.ACCESS_TOKEN }}

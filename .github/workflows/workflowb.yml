@@ -1,0 +1,10 @@
+name: test
+on: workflow_dispatch
+
+jobs:
+  hi_there:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello ${{ github.event.inputs.name }}!"
+          echo "- in ${{ github.event.inputs.home }}!"
