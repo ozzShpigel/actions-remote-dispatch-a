@@ -5,6 +5,7 @@ jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
+      - name: www 
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: My Workflow
