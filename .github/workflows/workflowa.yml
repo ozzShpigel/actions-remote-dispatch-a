@@ -9,4 +9,5 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: test
+          repo: ozzShpigel/actions-remote-dispatch-a
           token: ${{ secrets.ACCESS_TOKEN }}
