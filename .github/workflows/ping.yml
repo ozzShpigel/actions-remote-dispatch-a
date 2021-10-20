@@ -3,6 +3,7 @@ name: Remote Dispatch Action Initiator
 on:
   push:
   repository_dispatch:
+  workflow_dispatch:
 
 jobs:
   ping-pong:
