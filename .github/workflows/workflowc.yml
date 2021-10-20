@@ -10,4 +10,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "main 1th"
+      - run: echo "repo a"
